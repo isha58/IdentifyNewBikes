@@ -139,25 +139,25 @@ public class PageBaseClass extends BaseTestClass {
 		try {
 			if (locatorKey.endsWith("_Id")) {
 				element = driver.findElement(By.id(prop.getProperty(locatorKey)));
-				logger.log(Status.INFO, "Locator Identidied : " + locatorKey);
+				logger.log(Status.INFO, "Locator Identified : " + locatorKey);
 			} else if (locatorKey.endsWith("_Xpath")) {
 				element = driver.findElement(By.xpath(prop.getProperty(locatorKey)));
-				logger.log(Status.INFO, "Locator Identidied : " + locatorKey);
+				logger.log(Status.INFO, "Locator Identified : " + locatorKey);
 			} else if (locatorKey.endsWith("_ClassName")) {
 				element = driver.findElement(By.className(prop.getProperty(locatorKey)));
 			logger.log(Status.INFO, "Locator Identidied : " + locatorKey);
 			} else if (locatorKey.endsWith("_CSS")) {
 				element = driver.findElement(By.cssSelector(prop.getProperty(locatorKey)));
-				logger.log(Status.INFO, "Locator Identidied : " + locatorKey);
+				logger.log(Status.INFO, "Locator Identified : " + locatorKey);
 			} else if (locatorKey.endsWith("_LinkText")) {
 				element = driver.findElement(By.linkText(prop.getProperty(locatorKey)));
-				logger.log(Status.INFO, "Locator Identidied : " + locatorKey);
+				logger.log(Status.INFO, "Locator Identified : " + locatorKey);
 			} else if (locatorKey.endsWith("_PartialLinkText")) {
 				element = driver.findElement(By.partialLinkText(prop.getProperty(locatorKey)));
-				logger.log(Status.INFO, "Locator Identidied : " + locatorKey);
+				logger.log(Status.INFO, "Locator Identified : " + locatorKey);
 			} else if (locatorKey.endsWith("_Name")) {
 				element = driver.findElement(By.name(prop.getProperty(locatorKey)));
-				logger.log(Status.INFO, "Locator Identidied : " + locatorKey);
+				logger.log(Status.INFO, "Locator Identified : " + locatorKey);
 			} else {
 				reportFail("Failing the Testcase, Invalid Locator " + locatorKey);
 			}
