@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Apr 02 15:51:24 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>251 seconds (251939 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCase_NewBikesFunctionality.upcomingBikesVisibilityTest.upcommingBikesVisibleTest()'><b>upcommingBikesVisibleTest</b><br>Test class: testCase_NewBikesFunctionality.upcomingBikesVisibilityTest</td>
+<td></td>
+<td>7</td>
+<td>testCase_NewBikesFunctionality.upcomingBikesVisibilityTest@72ef8d15</td></tr>
+<tr>
+<td title='testCase_loginSignupFunctionality.loginSignupGoogleClickTest.loginTest()'><b>loginTest</b><br>Test class: testCase_loginSignupFunctionality.loginSignupGoogleClickTest</td>
+<td></td>
+<td>11</td>
+<td>testCase_loginSignupFunctionality.loginSignupGoogleClickTest@6aa8e115</td></tr>
+<tr>
+<td title='testCase_ManufacturerFunctionality.viewHondaBikesTest.manufacturerVisbleTest()'><b>manufacturerVisbleTest</b><br>Test class: testCase_ManufacturerFunctionality.viewHondaBikesTest</td>
+<td></td>
+<td>9</td>
+<td>testCase_ManufacturerFunctionality.viewHondaBikesTest@18ece7f4</td></tr>
+<tr>
+<td title='testCase_UpcomingBikesDetails.nameUpcomingBikesTest.nameHondaBikesVisbleTest()'><b>nameHondaBikesVisbleTest</b><br>Test class: testCase_UpcomingBikesDetails.nameUpcomingBikesTest</td>
+<td></td>
+<td>12</td>
+<td>testCase_UpcomingBikesDetails.nameUpcomingBikesTest@2663e964</td></tr>
+<tr>
+<td title='testCase_loginSignupFunctionality.LoginWithFacebookInvalidEmailTest.FacebookInvalidEmailLoginTest()'><b>FacebookInvalidEmailLoginTest</b><br>Test class: testCase_loginSignupFunctionality.LoginWithFacebookInvalidEmailTest<br>Parameters: {Password=test123, Comment=Invalid Email, Email=abcd@gmail.com}</td>
+<td></td>
+<td>6</td>
+<td>testCase_loginSignupFunctionality.LoginWithFacebookInvalidEmailTest@16c069df</td></tr>
+<tr>
+<td title='testCase_NewBikesFunctionality.newBikesTabVisibleTest.newBikesVisibleTest()'><b>newBikesVisibleTest</b><br>Test class: testCase_NewBikesFunctionality.newBikesTabVisibleTest</td>
+<td></td>
+<td>8</td>
+<td>testCase_NewBikesFunctionality.newBikesTabVisibleTest@44be0077</td></tr>
+<tr>
+<td title='testCase_UsedCarsFunctionality.usedCarsChennaiVisibilityTest.usedCarsChennaiVisibleTest()'><b>usedCarsChennaiVisibleTest</b><br>Test class: testCase_UsedCarsFunctionality.usedCarsChennaiVisibilityTest</td>
+<td></td>
+<td>7</td>
+<td>testCase_UsedCarsFunctionality.usedCarsChennaiVisibilityTest@6f3187b0</td></tr>
+<tr>
+<td title='testCase_loginSignupFunctionality.loginSignupClickTest.loginTest()'><b>loginTest</b><br>Test class: testCase_loginSignupFunctionality.loginSignupClickTest</td>
+<td></td>
+<td>7</td>
+<td>testCase_loginSignupFunctionality.loginSignupClickTest@6dd7b5a3</td></tr>
+<tr>
+<td title='testCase_loginSignupFunctionality.LoginWithGoogleInvalidEmailTest.GoogleInvalidEmailLoginTest()'><b>GoogleInvalidEmailLoginTest</b><br>Test class: testCase_loginSignupFunctionality.LoginWithGoogleInvalidEmailTest<br>Parameters: {Password=abcd123, Comment=Invalid Email, Email=abcgmail.com}</td>
+<td></td>
+<td>6</td>
+<td>testCase_loginSignupFunctionality.LoginWithGoogleInvalidEmailTest@42e25b0b</td></tr>
+<tr>
+<td title='testCase_loginSignupFunctionality.loginSignupDisplayedTest.logSignVisibilityTest()'><b>logSignVisibilityTest</b><br>Test class: testCase_loginSignupFunctionality.loginSignupDisplayedTest</td>
+<td></td>
+<td>7</td>
+<td>testCase_loginSignupFunctionality.loginSignupDisplayedTest@6950ed69</td></tr>
+<tr>
+<td title='testCase_UsedCarsFunctionality.usedCarsPopularModelsTest.usedCarsTest()'><b>usedCarsTest</b><br>Test class: testCase_UsedCarsFunctionality.usedCarsPopularModelsTest</td>
+<td></td>
+<td>9</td>
+<td>testCase_UsedCarsFunctionality.usedCarsPopularModelsTest@48b67364</td></tr>
+<tr>
+<td title='testCase_ManufacturerFunctionality.manufacturerDropdownVisibleTest.manufacturerVisbleTest()'><b>manufacturerVisbleTest</b><br>Test class: testCase_ManufacturerFunctionality.manufacturerDropdownVisibleTest</td>
+<td></td>
+<td>8</td>
+<td>testCase_ManufacturerFunctionality.manufacturerDropdownVisibleTest@31edaa7d</td></tr>
+<tr>
+<td title='testCase_UpcomingBikesDetails.priceUpcomingBikesTest.priceHondaBikesVisbleTest()'><b>priceHondaBikesVisbleTest</b><br>Test class: testCase_UpcomingBikesDetails.priceUpcomingBikesTest</td>
+<td></td>
+<td>12</td>
+<td>testCase_UpcomingBikesDetails.priceUpcomingBikesTest@39b43d60</td></tr>
+<tr>
+<td title='testCase_NewBikesFunctionality.upcomingBikesUnder4LakhTest.upcomingBikesTest()'><b>upcomingBikesTest</b><br>Test class: testCase_NewBikesFunctionality.upcomingBikesUnder4LakhTest</td>
+<td></td>
+<td>14</td>
+<td>testCase_NewBikesFunctionality.upcomingBikesUnder4LakhTest@26adfd2d</td></tr>
+<tr>
+<td title='testCase_UpcomingBikesDetails.launchDateUpcomingBikesTest.launchDateHondaBikesVisbleTest()'><b>launchDateHondaBikesVisbleTest</b><br>Test class: testCase_UpcomingBikesDetails.launchDateUpcomingBikesTest</td>
+<td></td>
+<td>12</td>
+<td>testCase_UpcomingBikesDetails.launchDateUpcomingBikesTest@2205a05d</td></tr>
+<tr>
+<td title='testCase_UsedCarsFunctionality.usedCarsTabVisibleTest.usedCarsVisibleTest()'><b>usedCarsVisibleTest</b><br>Test class: testCase_UsedCarsFunctionality.usedCarsTabVisibleTest</td>
+<td></td>
+<td>7</td>
+<td>testCase_UsedCarsFunctionality.usedCarsTabVisibleTest@2bec854f</td></tr>
+<tr>
+<td title='testCase_UpcomingBikesDetails.alertMeLaunchTest.alertMeTest()'><b>alertMeTest</b><br>Test class: testCase_UpcomingBikesDetails.alertMeLaunchTest</td>
+<td></td>
+<td>15</td>
+<td>testCase_UpcomingBikesDetails.alertMeLaunchTest@15a04efb</td></tr>
+<tr>
+<td title='testCase_loginSignupFunctionality.LoginWithFacebookInvalidPasswordTest.FacebookInvalidPasswordLoginTest()'><b>FacebookInvalidPasswordLoginTest</b><br>Test class: testCase_loginSignupFunctionality.LoginWithFacebookInvalidPasswordTest<br>Parameters: {Password=test123, Comment=Invalid Password, Email=dipender}</td>
+<td></td>
+<td>12</td>
+<td>testCase_loginSignupFunctionality.LoginWithFacebookInvalidPasswordTest@189cbd7c</td></tr>
+<tr>
+<td title='testCase_ManufacturerFunctionality.hondaVisibilityTest.hondaVisibleTest()'><b>hondaVisibleTest</b><br>Test class: testCase_ManufacturerFunctionality.hondaVisibilityTest</td>
+<td></td>
+<td>8</td>
+<td>testCase_ManufacturerFunctionality.hondaVisibilityTest@7bf3a5d8</td></tr>
+<tr>
+<td title='testCase_loginSignupFunctionality.LoginWithGoogleInvalidPasswordTest.GoogleInvalidPasswordTest()'><b>GoogleInvalidPasswordTest</b><br>Test class: testCase_loginSignupFunctionality.LoginWithGoogleInvalidPasswordTest<br>Parameters: {Password=abcd123, Comment=Invalid Password, Email=1802652.it.cec@cgc.edu.in}</td>
+<td></td>
+<td>7</td>
+<td>testCase_loginSignupFunctionality.LoginWithGoogleInvalidPasswordTest@1890516e</td></tr>
+<tr>
+<td title='testCase_UsedCarsFunctionality.viewSellerDetailsTest.usedCarsTest()'><b>usedCarsTest</b><br>Test class: testCase_UsedCarsFunctionality.viewSellerDetailsTest</td>
+<td></td>
+<td>9</td>
+<td>testCase_UsedCarsFunctionality.viewSellerDetailsTest@205d38da</td></tr>
+</table><p>
+</body>
+</html>
