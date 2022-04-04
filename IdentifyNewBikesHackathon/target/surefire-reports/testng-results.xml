@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="12" ignored="0" total="22" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="739916" started-at="2022-04-04T14:25:21 IST" finished-at="2022-04-04T14:37:40 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="739916" started-at="2022-04-04T14:25:21 IST" finished-at="2022-04-04T14:37:40 IST">
+      <class name="testCase_loginSignupFunctionality.loginSignupGoogleClickTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_loginSignupFunctionality.loginSignupGoogleClickTest@33b37288]" name="invokeBrowser" is-config="true" duration-ms="3583" started-at="2022-04-04T14:37:05 IST" finished-at="2022-04-04T14:37:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="loginGoogleClickTest()[pri:0, instance:testCase_loginSignupFunctionality.loginSignupGoogleClickTest@33b37288]" name="loginGoogleClickTest" duration-ms="29699" started-at="2022-04-04T14:37:09 IST" finished-at="2022-04-04T14:37:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginGoogleClickTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_loginSignupFunctionality.loginSignupGoogleClickTest@33b37288]" name="flushReports" is-config="true" duration-ms="1739" started-at="2022-04-04T14:37:39 IST" finished-at="2022-04-04T14:37:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_loginSignupFunctionality.loginSignupGoogleClickTest -->
+      <class name="testCase_UsedCarsFunctionality.viewSellerDetailsTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_UsedCarsFunctionality.viewSellerDetailsTest@2df32bf7]" name="invokeBrowser" is-config="true" duration-ms="3482" started-at="2022-04-04T14:27:59 IST" finished-at="2022-04-04T14:28:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="usedCarsViewSellerTest()[pri:0, instance:testCase_UsedCarsFunctionality.viewSellerDetailsTest@2df32bf7]" name="usedCarsViewSellerTest" duration-ms="23609" started-at="2022-04-04T14:28:02 IST" finished-at="2022-04-04T14:28:26 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 584129fda5fe48b9892e29870e359099
+*** Element info: {Using=id, value=alternate-login-close}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 584129fda5fe48b9892e29870e359099
+*** Element info: {Using=id, value=alternate-login-close}
+at org.testng.Assert.fail(Assert.java:99)
+at BaseClasses.PageBaseClass.reportFail(PageBaseClass.java:53)
+at BaseClasses.PageBaseClass.getElement(PageBaseClass.java:167)
+at BaseClasses.PageBaseClass.explicitlyWait(PageBaseClass.java:190)
+at Pages.LandingPage.clickLoginClose(LandingPage.java:103)
+at testCase_UsedCarsFunctionality.viewSellerDetailsTest.usedCarsViewSellerTest(viewSellerDetailsTest.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usedCarsViewSellerTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_UsedCarsFunctionality.viewSellerDetailsTest@2df32bf7]" name="flushReports" is-config="true" duration-ms="958" started-at="2022-04-04T14:28:26 IST" finished-at="2022-04-04T14:28:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_UsedCarsFunctionality.viewSellerDetailsTest -->
+      <class name="testCase_NewBikesFunctionality.upcomingBikesUnder4LakhTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_NewBikesFunctionality.upcomingBikesUnder4LakhTest@2a40cd94]" name="invokeBrowser" is-config="true" duration-ms="3887" started-at="2022-04-04T14:28:27 IST" finished-at="2022-04-04T14:28:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="upcomingBikesTest()[pri:0, instance:testCase_NewBikesFunctionality.upcomingBikesUnder4LakhTest@2a40cd94]" name="upcomingBikesTest" duration-ms="32933" started-at="2022-04-04T14:28:31 IST" finished-at="2022-04-04T14:29:04 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 915bd18340fec6c2057362850926e56f
+*** Element info: {Using=id, value=alternate-login-close}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 915bd18340fec6c2057362850926e56f
+*** Element info: {Using=id, value=alternate-login-close}
+at org.testng.Assert.fail(Assert.java:99)
+at BaseClasses.PageBaseClass.reportFail(PageBaseClass.java:53)
+at BaseClasses.PageBaseClass.getElement(PageBaseClass.java:167)
+at BaseClasses.PageBaseClass.explicitlyWait(PageBaseClass.java:190)
+at Pages.LandingPage.clickLoginClose(LandingPage.java:103)
+at testCase_NewBikesFunctionality.upcomingBikesUnder4LakhTest.upcomingBikesTest(upcomingBikesUnder4LakhTest.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upcomingBikesTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_NewBikesFunctionality.upcomingBikesUnder4LakhTest@2a40cd94]" name="flushReports" is-config="true" duration-ms="1067" started-at="2022-04-04T14:29:04 IST" finished-at="2022-04-04T14:29:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_NewBikesFunctionality.upcomingBikesUnder4LakhTest -->
+      <class name="testCase_UsedCarsFunctionality.usedCarsTabVisibleTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_UsedCarsFunctionality.usedCarsTabVisibleTest@2bea5ab4]" name="invokeBrowser" is-config="true" duration-ms="3191" started-at="2022-04-04T14:27:08 IST" finished-at="2022-04-04T14:27:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="usedCarsVisibleTest()[pri:0, instance:testCase_UsedCarsFunctionality.usedCarsTabVisibleTest@2bea5ab4]" name="usedCarsVisibleTest" duration-ms="16795" started-at="2022-04-04T14:27:11 IST" finished-at="2022-04-04T14:27:28 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51895}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a573a8720b0e8c0617c07a2c89cf48d0
+*** Element info: {Using=id, value=alternate-login-close}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51895}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a573a8720b0e8c0617c07a2c89cf48d0
+*** Element info: {Using=id, value=alternate-login-close}
+at org.testng.Assert.fail(Assert.java:99)
+at BaseClasses.PageBaseClass.reportFail(PageBaseClass.java:53)
+at BaseClasses.PageBaseClass.getElement(PageBaseClass.java:167)
+at BaseClasses.PageBaseClass.explicitlyWait(PageBaseClass.java:190)
+at Pages.LandingPage.clickLoginClose(LandingPage.java:103)
+at testCase_UsedCarsFunctionality.usedCarsTabVisibleTest.usedCarsVisibleTest(usedCarsTabVisibleTest.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usedCarsVisibleTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_UsedCarsFunctionality.usedCarsTabVisibleTest@2bea5ab4]" name="flushReports" is-config="true" duration-ms="1003" started-at="2022-04-04T14:27:28 IST" finished-at="2022-04-04T14:27:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_UsedCarsFunctionality.usedCarsTabVisibleTest -->
+      <class name="testCase_UpcomingBikesDetails.priceUpcomingBikesTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_UpcomingBikesDetails.priceUpcomingBikesTest@101df177]" name="invokeBrowser" is-config="true" duration-ms="4458" started-at="2022-04-04T14:34:05 IST" finished-at="2022-04-04T14:34:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="priceHondaBikesVisbleTest()[pri:0, instance:testCase_UpcomingBikesDetails.priceUpcomingBikesTest@101df177]" name="priceHondaBikesVisbleTest" duration-ms="54848" started-at="2022-04-04T14:34:09 IST" finished-at="2022-04-04T14:35:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priceHondaBikesVisbleTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_UpcomingBikesDetails.priceUpcomingBikesTest@101df177]" name="flushReports" is-config="true" duration-ms="2220" started-at="2022-04-04T14:35:04 IST" finished-at="2022-04-04T14:35:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_UpcomingBikesDetails.priceUpcomingBikesTest -->
+      <class name="testCase_NewBikesFunctionality.newBikesTabVisibleTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_NewBikesFunctionality.newBikesTabVisibleTest@166fa74d]" name="invokeBrowser" is-config="true" duration-ms="4721" started-at="2022-04-04T14:35:06 IST" finished-at="2022-04-04T14:35:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="newBikesVisibleTest()[pri:0, instance:testCase_NewBikesFunctionality.newBikesTabVisibleTest@166fa74d]" name="newBikesVisibleTest" duration-ms="18863" started-at="2022-04-04T14:35:11 IST" finished-at="2022-04-04T14:35:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newBikesVisibleTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_NewBikesFunctionality.newBikesTabVisibleTest@166fa74d]" name="flushReports" is-config="true" duration-ms="1770" started-at="2022-04-04T14:35:30 IST" finished-at="2022-04-04T14:35:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_NewBikesFunctionality.newBikesTabVisibleTest -->
+      <class name="testCase_ManufacturerFunctionality.hondaVisibilityTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_ManufacturerFunctionality.hondaVisibilityTest@2f490758]" name="invokeBrowser" is-config="true" duration-ms="3826" started-at="2022-04-04T14:33:30 IST" finished-at="2022-04-04T14:33:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="hondaVisibleTest()[pri:0, instance:testCase_ManufacturerFunctionality.hondaVisibilityTest@2f490758]" name="hondaVisibleTest" duration-ms="27924" started-at="2022-04-04T14:33:34 IST" finished-at="2022-04-04T14:34:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hondaVisibleTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_ManufacturerFunctionality.hondaVisibilityTest@2f490758]" name="flushReports" is-config="true" duration-ms="2575" started-at="2022-04-04T14:34:02 IST" finished-at="2022-04-04T14:34:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_ManufacturerFunctionality.hondaVisibilityTest -->
+      <class name="testCase_NewBikesFunctionality.upcomingBikesVisibilityTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_NewBikesFunctionality.upcomingBikesVisibilityTest@276438c9]" name="invokeBrowser" is-config="true" duration-ms="4053" started-at="2022-04-04T14:36:37 IST" finished-at="2022-04-04T14:36:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="upcommingBikesVisibleTest()[pri:0, instance:testCase_NewBikesFunctionality.upcomingBikesVisibilityTest@276438c9]" name="upcommingBikesVisibleTest" duration-ms="22491" started-at="2022-04-04T14:36:41 IST" finished-at="2022-04-04T14:37:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upcommingBikesVisibleTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_NewBikesFunctionality.upcomingBikesVisibilityTest@276438c9]" name="flushReports" is-config="true" duration-ms="1589" started-at="2022-04-04T14:37:04 IST" finished-at="2022-04-04T14:37:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_NewBikesFunctionality.upcomingBikesVisibilityTest -->
+      <class name="testCase_loginSignupFunctionality.LoginWithFacebookInvalidPasswordTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_loginSignupFunctionality.LoginWithFacebookInvalidPasswordTest@130f889]" name="invokeBrowser" is-config="true" duration-ms="3414" started-at="2022-04-04T14:32:03 IST" finished-at="2022-04-04T14:32:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="FacebookInvalidPasswordLoginTest(java.util.Hashtable)[pri:0, instance:testCase_loginSignupFunctionality.LoginWithFacebookInvalidPasswordTest@130f889]" name="FacebookInvalidPasswordLoginTest" duration-ms="37919" started-at="2022-04-04T14:32:07 IST" data-provider="getFacebookInvalidPasswordLoginTestData" finished-at="2022-04-04T14:32:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=test123, Comment=Invalid Password, Email=dipender}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FacebookInvalidPasswordLoginTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_loginSignupFunctionality.LoginWithFacebookInvalidPasswordTest@130f889]" name="flushReports" is-config="true" duration-ms="1644" started-at="2022-04-04T14:32:45 IST" finished-at="2022-04-04T14:32:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_loginSignupFunctionality.LoginWithFacebookInvalidPasswordTest -->
+      <class name="testCase_UpcomingBikesDetails.launchDateUpcomingBikesTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_UpcomingBikesDetails.launchDateUpcomingBikesTest@40f08448]" name="invokeBrowser" is-config="true" duration-ms="4244" started-at="2022-04-04T14:35:32 IST" finished-at="2022-04-04T14:35:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="launchDateHondaBikesVisbleTest()[pri:0, instance:testCase_UpcomingBikesDetails.launchDateUpcomingBikesTest@40f08448]" name="launchDateHondaBikesVisbleTest" duration-ms="59503" started-at="2022-04-04T14:35:36 IST" finished-at="2022-04-04T14:36:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchDateHondaBikesVisbleTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_UpcomingBikesDetails.launchDateUpcomingBikesTest@40f08448]" name="flushReports" is-config="true" duration-ms="2051" started-at="2022-04-04T14:36:35 IST" finished-at="2022-04-04T14:36:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_UpcomingBikesDetails.launchDateUpcomingBikesTest -->
+      <class name="testCase_loginSignupFunctionality.LoginWithFacebookInvalidEmailTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_loginSignupFunctionality.LoginWithFacebookInvalidEmailTest@76b10754]" name="invokeBrowser" is-config="true" duration-ms="3775" started-at="2022-04-04T14:26:46 IST" finished-at="2022-04-04T14:26:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="FacebookInvalidEmailLoginTest(java.util.Hashtable)[pri:0, instance:testCase_loginSignupFunctionality.LoginWithFacebookInvalidEmailTest@76b10754]" name="FacebookInvalidEmailLoginTest" duration-ms="16689" started-at="2022-04-04T14:26:50 IST" data-provider="getFacebookInvalidEmailLoginTestData" finished-at="2022-04-04T14:27:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=test123, Comment=Invalid Email, Email=abcd@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51854}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f3e3ef3429b32e77d179aae85296a1d
+*** Element info: {Using=id, value=forum_login_title_lg}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51854}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f3e3ef3429b32e77d179aae85296a1d
+*** Element info: {Using=id, value=forum_login_title_lg}
+at org.testng.Assert.fail(Assert.java:99)
+at BaseClasses.PageBaseClass.reportFail(PageBaseClass.java:53)
+at BaseClasses.PageBaseClass.getElement(PageBaseClass.java:167)
+at BaseClasses.PageBaseClass.elementClick(PageBaseClass.java:177)
+at Pages.LandingPage.clickLoginSignupButton(LandingPage.java:85)
+at testCase_loginSignupFunctionality.LoginWithFacebookInvalidEmailTest.FacebookInvalidEmailLoginTest(LoginWithFacebookInvalidEmailTest.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FacebookInvalidEmailLoginTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_loginSignupFunctionality.LoginWithFacebookInvalidEmailTest@76b10754]" name="flushReports" is-config="true" duration-ms="898" started-at="2022-04-04T14:27:07 IST" finished-at="2022-04-04T14:27:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_loginSignupFunctionality.LoginWithFacebookInvalidEmailTest -->
+      <class name="testingbuild.test1">
+        <test-method status="PASS" signature="test()[pri:0, instance:testingbuild.test1@588df31b]" name="test" duration-ms="0" started-at="2022-04-04T14:37:05 IST" finished-at="2022-04-04T14:37:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- testingbuild.test1 -->
+      <class name="testCase_UpcomingBikesDetails.alertMeLaunchTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_UpcomingBikesDetails.alertMeLaunchTest@de3a06f]" name="invokeBrowser" is-config="true" duration-ms="4107" started-at="2022-04-04T14:26:22 IST" finished-at="2022-04-04T14:26:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="alertMeTest()[pri:0, instance:testCase_UpcomingBikesDetails.alertMeLaunchTest@de3a06f]" name="alertMeTest" duration-ms="18672" started-at="2022-04-04T14:26:26 IST" finished-at="2022-04-04T14:26:45 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56830}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30669dadaf8da8242d8ff46fe1db8b4f
+*** Element info: {Using=id, value=alternate-login-close}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56830}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30669dadaf8da8242d8ff46fe1db8b4f
+*** Element info: {Using=id, value=alternate-login-close}
+at org.testng.Assert.fail(Assert.java:99)
+at BaseClasses.PageBaseClass.reportFail(PageBaseClass.java:53)
+at BaseClasses.PageBaseClass.getElement(PageBaseClass.java:167)
+at BaseClasses.PageBaseClass.explicitlyWait(PageBaseClass.java:190)
+at Pages.LandingPage.clickLoginClose(LandingPage.java:103)
+at testCase_UpcomingBikesDetails.alertMeLaunchTest.alertMeTest(alertMeLaunchTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertMeTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_UpcomingBikesDetails.alertMeLaunchTest@de3a06f]" name="flushReports" is-config="true" duration-ms="1092" started-at="2022-04-04T14:26:45 IST" finished-at="2022-04-04T14:26:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_UpcomingBikesDetails.alertMeLaunchTest -->
+      <class name="testCase_loginSignupFunctionality.LoginWithGoogleInvalidPasswordTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_loginSignupFunctionality.LoginWithGoogleInvalidPasswordTest@6c9f5c0d]" name="invokeBrowser" is-config="true" duration-ms="5852" started-at="2022-04-04T14:25:51 IST" finished-at="2022-04-04T14:25:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="GoogleInvalidPasswordTest(java.util.Hashtable)[pri:0, instance:testCase_loginSignupFunctionality.LoginWithGoogleInvalidPasswordTest@6c9f5c0d]" name="GoogleInvalidPasswordTest" duration-ms="24510" started-at="2022-04-04T14:25:57 IST" data-provider="getGoogleInvalidPasswordLoginTestData" finished-at="2022-04-04T14:26:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=abcd123, Comment=Invalid Password, Email=1802652.it.cec@cgc.edu.in}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 866aca07eb3ff325d65c82917ff4e673
+*** Element info: {Using=id, value=forum_login_title_lg}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 866aca07eb3ff325d65c82917ff4e673
+*** Element info: {Using=id, value=forum_login_title_lg}
+at org.testng.Assert.fail(Assert.java:99)
+at BaseClasses.PageBaseClass.reportFail(PageBaseClass.java:53)
+at BaseClasses.PageBaseClass.getElement(PageBaseClass.java:167)
+at BaseClasses.PageBaseClass.elementClick(PageBaseClass.java:177)
+at Pages.LandingPage.clickLoginSignupButton(LandingPage.java:85)
+at testCase_loginSignupFunctionality.LoginWithGoogleInvalidPasswordTest.GoogleInvalidPasswordTest(LoginWithGoogleInvalidPasswordTest.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleInvalidPasswordTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_loginSignupFunctionality.LoginWithGoogleInvalidPasswordTest@6c9f5c0d]" name="flushReports" is-config="true" duration-ms="1083" started-at="2022-04-04T14:26:21 IST" finished-at="2022-04-04T14:26:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_loginSignupFunctionality.LoginWithGoogleInvalidPasswordTest -->
+      <class name="testCase_ManufacturerFunctionality.manufacturerDropdownVisibleTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_ManufacturerFunctionality.manufacturerDropdownVisibleTest@3d8314f0]" name="invokeBrowser" is-config="true" duration-ms="3068" started-at="2022-04-04T14:27:29 IST" finished-at="2022-04-04T14:27:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="manufacturerVisbleTest()[pri:0, instance:testCase_ManufacturerFunctionality.manufacturerDropdownVisibleTest@3d8314f0]" name="manufacturerVisbleTest" duration-ms="25937" started-at="2022-04-04T14:27:32 IST" finished-at="2022-04-04T14:27:58 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51937}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a4ceece6660523185b8319ab2816183
+*** Element info: {Using=id, value=alternate-login-close}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51937}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a4ceece6660523185b8319ab2816183
+*** Element info: {Using=id, value=alternate-login-close}
+at org.testng.Assert.fail(Assert.java:99)
+at BaseClasses.PageBaseClass.reportFail(PageBaseClass.java:53)
+at BaseClasses.PageBaseClass.getElement(PageBaseClass.java:167)
+at BaseClasses.PageBaseClass.explicitlyWait(PageBaseClass.java:190)
+at Pages.LandingPage.clickLoginClose(LandingPage.java:103)
+at testCase_ManufacturerFunctionality.manufacturerDropdownVisibleTest.manufacturerVisbleTest(manufacturerDropdownVisibleTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manufacturerVisbleTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_ManufacturerFunctionality.manufacturerDropdownVisibleTest@3d8314f0]" name="flushReports" is-config="true" duration-ms="1052" started-at="2022-04-04T14:27:58 IST" finished-at="2022-04-04T14:27:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_ManufacturerFunctionality.manufacturerDropdownVisibleTest -->
+      <class name="testCase_loginSignupFunctionality.LoginWithGoogleInvalidEmailTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_loginSignupFunctionality.LoginWithGoogleInvalidEmailTest@1188e820]" name="invokeBrowser" is-config="true" duration-ms="4388" started-at="2022-04-04T14:32:47 IST" finished-at="2022-04-04T14:32:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="GoogleInvalidEmailLoginTest(java.util.Hashtable)[pri:0, instance:testCase_loginSignupFunctionality.LoginWithGoogleInvalidEmailTest@1188e820]" name="GoogleInvalidEmailLoginTest" duration-ms="37838" started-at="2022-04-04T14:32:51 IST" data-provider="getGoogleInvalidEmailLoginTestData" finished-at="2022-04-04T14:33:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=abcd123, Comment=Invalid Email, Email=abcgmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleInvalidEmailLoginTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_loginSignupFunctionality.LoginWithGoogleInvalidEmailTest@1188e820]" name="flushReports" is-config="true" duration-ms="1549" started-at="2022-04-04T14:33:29 IST" finished-at="2022-04-04T14:33:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_loginSignupFunctionality.LoginWithGoogleInvalidEmailTest -->
+      <class name="testCase_loginSignupFunctionality.loginSignupDisplayedTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_loginSignupFunctionality.loginSignupDisplayedTest@3bd94634]" name="invokeBrowser" is-config="true" duration-ms="6492" started-at="2022-04-04T14:29:35 IST" finished-at="2022-04-04T14:29:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="logSignVisibilityTest()[pri:0, instance:testCase_loginSignupFunctionality.loginSignupDisplayedTest@3bd94634]" name="logSignVisibilityTest" duration-ms="19365" started-at="2022-04-04T14:29:42 IST" finished-at="2022-04-04T14:30:01 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57540}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 95b4fae07d0c21587dfa5c9e2ba20e24
+*** Element info: {Using=id, value=alternate-login-close}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57540}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 95b4fae07d0c21587dfa5c9e2ba20e24
+*** Element info: {Using=id, value=alternate-login-close}
+at org.testng.Assert.fail(Assert.java:99)
+at BaseClasses.PageBaseClass.reportFail(PageBaseClass.java:53)
+at BaseClasses.PageBaseClass.getElement(PageBaseClass.java:167)
+at BaseClasses.PageBaseClass.explicitlyWait(PageBaseClass.java:190)
+at Pages.LandingPage.clickLoginClose(LandingPage.java:103)
+at testCase_loginSignupFunctionality.loginSignupDisplayedTest.logSignVisibilityTest(loginSignupDisplayedTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logSignVisibilityTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_loginSignupFunctionality.loginSignupDisplayedTest@3bd94634]" name="flushReports" is-config="true" duration-ms="802" started-at="2022-04-04T14:30:01 IST" finished-at="2022-04-04T14:30:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_loginSignupFunctionality.loginSignupDisplayedTest -->
+      <class name="testCase_loginSignupFunctionality.loginSignupClickTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_loginSignupFunctionality.loginSignupClickTest@f4168b8]" name="invokeBrowser" is-config="true" duration-ms="4255" started-at="2022-04-04T14:29:05 IST" finished-at="2022-04-04T14:29:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="loginSignUpClickTest()[pri:0, instance:testCase_loginSignupFunctionality.loginSignupClickTest@f4168b8]" name="loginSignUpClickTest" duration-ms="24745" started-at="2022-04-04T14:29:09 IST" finished-at="2022-04-04T14:29:34 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 340e6454c8d07b8f1783f9e95ba2a0b8
+*** Element info: {Using=id, value=alternate-login-close}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 340e6454c8d07b8f1783f9e95ba2a0b8
+*** Element info: {Using=id, value=alternate-login-close}
+at org.testng.Assert.fail(Assert.java:99)
+at BaseClasses.PageBaseClass.reportFail(PageBaseClass.java:53)
+at BaseClasses.PageBaseClass.getElement(PageBaseClass.java:167)
+at BaseClasses.PageBaseClass.explicitlyWait(PageBaseClass.java:190)
+at Pages.LandingPage.clickLoginClose(LandingPage.java:103)
+at testCase_loginSignupFunctionality.loginSignupClickTest.loginSignUpClickTest(loginSignupClickTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSignUpClickTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_loginSignupFunctionality.loginSignupClickTest@f4168b8]" name="flushReports" is-config="true" duration-ms="1628" started-at="2022-04-04T14:29:34 IST" finished-at="2022-04-04T14:29:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_loginSignupFunctionality.loginSignupClickTest -->
+      <class name="testCase_UsedCarsFunctionality.usedCarsChennaiVisibilityTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_UsedCarsFunctionality.usedCarsChennaiVisibilityTest@58a90037]" name="invokeBrowser" is-config="true" duration-ms="5051" started-at="2022-04-04T14:30:02 IST" finished-at="2022-04-04T14:30:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="usedCarsChennaiVisibleTest()[pri:0, instance:testCase_UsedCarsFunctionality.usedCarsChennaiVisibilityTest@58a90037]" name="usedCarsChennaiVisibleTest" duration-ms="576" started-at="2022-04-04T14:30:07 IST" finished-at="2022-04-04T14:30:08 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 127deb727d44f58890ac2b5f92aba9ce
+*** Element info: {Using=id, value=alternate-login-close}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 127deb727d44f58890ac2b5f92aba9ce
+*** Element info: {Using=id, value=alternate-login-close}
+at org.testng.Assert.fail(Assert.java:99)
+at BaseClasses.PageBaseClass.reportFail(PageBaseClass.java:53)
+at BaseClasses.PageBaseClass.getElement(PageBaseClass.java:167)
+at BaseClasses.PageBaseClass.explicitlyWait(PageBaseClass.java:190)
+at Pages.LandingPage.clickLoginClose(LandingPage.java:103)
+at testCase_UsedCarsFunctionality.usedCarsChennaiVisibilityTest.usedCarsChennaiVisibleTest(usedCarsChennaiVisibilityTest.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usedCarsChennaiVisibleTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_UsedCarsFunctionality.usedCarsChennaiVisibilityTest@58a90037]" name="flushReports" is-config="true" duration-ms="1211" started-at="2022-04-04T14:30:08 IST" finished-at="2022-04-04T14:30:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_UsedCarsFunctionality.usedCarsChennaiVisibilityTest -->
+      <class name="testCase_ManufacturerFunctionality.viewHondaBikesTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_ManufacturerFunctionality.viewHondaBikesTest@61ca2dfa]" name="invokeBrowser" is-config="true" duration-ms="6034" started-at="2022-04-04T14:25:21 IST" finished-at="2022-04-04T14:25:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="bikeHondaVisbleTest()[pri:0, instance:testCase_ManufacturerFunctionality.viewHondaBikesTest@61ca2dfa]" name="bikeHondaVisbleTest" duration-ms="20288" started-at="2022-04-04T14:25:27 IST" finished-at="2022-04-04T14:25:47 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52174}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 940741330deca0ca160c9f8b9281efbc
+*** Element info: {Using=id, value=alternate-login-close}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: chrome not reachable
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52174}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 940741330deca0ca160c9f8b9281efbc
+*** Element info: {Using=id, value=alternate-login-close}
+at org.testng.Assert.fail(Assert.java:99)
+at BaseClasses.PageBaseClass.reportFail(PageBaseClass.java:53)
+at BaseClasses.PageBaseClass.getElement(PageBaseClass.java:167)
+at BaseClasses.PageBaseClass.explicitlyWait(PageBaseClass.java:190)
+at Pages.LandingPage.clickLoginClose(LandingPage.java:103)
+at testCase_ManufacturerFunctionality.viewHondaBikesTest.bikeHondaVisbleTest(viewHondaBikesTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bikeHondaVisbleTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_ManufacturerFunctionality.viewHondaBikesTest@61ca2dfa]" name="flushReports" is-config="true" duration-ms="2098" started-at="2022-04-04T14:25:47 IST" finished-at="2022-04-04T14:25:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_ManufacturerFunctionality.viewHondaBikesTest -->
+      <class name="testCase_UsedCarsFunctionality.usedCarsPopularModelsTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_UsedCarsFunctionality.usedCarsPopularModelsTest@70a9f84e]" name="invokeBrowser" is-config="true" duration-ms="8804" started-at="2022-04-04T14:31:04 IST" finished-at="2022-04-04T14:31:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="usedCarsPopularModelTest()[pri:0, instance:testCase_UsedCarsFunctionality.usedCarsPopularModelsTest@70a9f84e]" name="usedCarsPopularModelTest" duration-ms="48833" started-at="2022-04-04T14:31:13 IST" finished-at="2022-04-04T14:32:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usedCarsPopularModelTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_UsedCarsFunctionality.usedCarsPopularModelsTest@70a9f84e]" name="flushReports" is-config="true" duration-ms="1792" started-at="2022-04-04T14:32:02 IST" finished-at="2022-04-04T14:32:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_UsedCarsFunctionality.usedCarsPopularModelsTest -->
+      <class name="testCase_UpcomingBikesDetails.nameUpcomingBikesTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCase_UpcomingBikesDetails.nameUpcomingBikesTest@74294adb]" name="invokeBrowser" is-config="true" duration-ms="5739" started-at="2022-04-04T14:30:09 IST" finished-at="2022-04-04T14:30:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="nameHondaBikesVisbleTest()[pri:0, instance:testCase_UpcomingBikesDetails.nameUpcomingBikesTest@74294adb]" name="nameHondaBikesVisbleTest" duration-ms="47341" started-at="2022-04-04T14:30:15 IST" finished-at="2022-04-04T14:31:02 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 37024b1f0c0c3ec022623f74afffa0d8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=100.0.4896.60)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISHA58', ip: '192.168.134.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\YOGESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 37024b1f0c0c3ec022623f74afffa0d8
+at org.testng.Assert.fail(Assert.java:99)
+at BaseClasses.PageBaseClass.reportFail(PageBaseClass.java:53)
+at BaseClasses.PageBaseClass.elementClick(PageBaseClass.java:181)
+at BaseClasses.TopMenuClass.clickNewBikes(TopMenuClass.java:25)
+at testCase_UpcomingBikesDetails.nameUpcomingBikesTest.nameHondaBikesVisbleTest(nameUpcomingBikesTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameHondaBikesVisbleTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testCase_UpcomingBikesDetails.nameUpcomingBikesTest@74294adb]" name="flushReports" is-config="true" duration-ms="2084" started-at="2022-04-04T14:31:02 IST" finished-at="2022-04-04T14:31:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testCase_UpcomingBikesDetails.nameUpcomingBikesTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

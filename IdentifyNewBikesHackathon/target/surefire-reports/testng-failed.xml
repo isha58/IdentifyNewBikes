@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <classes>
+      <class name="testCase_UpcomingBikesDetails.nameUpcomingBikesTest">
+        <methods>
+          <include name="nameHondaBikesVisbleTest"/>
+          <include name="invokeBrowser"/>
+          <include name="flushReports"/>
+        </methods>
+      </class> <!-- testCase_UpcomingBikesDetails.nameUpcomingBikesTest -->
+      <class name="testCase_ManufacturerFunctionality.viewHondaBikesTest">
+        <methods>
+          <include name="bikeHondaVisbleTest"/>
+          <include name="invokeBrowser"/>
+          <include name="flushReports"/>
+        </methods>
+      </class> <!-- testCase_ManufacturerFunctionality.viewHondaBikesTest -->
+      <class name="testCase_NewBikesFunctionality.upcomingBikesUnder4LakhTest">
+        <methods>
+          <include name="upcomingBikesTest"/>
+          <include name="invokeBrowser"/>
+          <include name="flushReports"/>
+        </methods>
+      </class> <!-- testCase_NewBikesFunctionality.upcomingBikesUnder4LakhTest -->
+      <class name="testCase_loginSignupFunctionality.loginSignupClickTest">
+        <methods>
+          <include name="loginSignUpClickTest"/>
+          <include name="invokeBrowser"/>
+          <include name="flushReports"/>
+        </methods>
+      </class> <!-- testCase_loginSignupFunctionality.loginSignupClickTest -->
+      <class name="testCase_UsedCarsFunctionality.usedCarsChennaiVisibilityTest">
+        <methods>
+          <include name="usedCarsChennaiVisibleTest"/>
+          <include name="invokeBrowser"/>
+          <include name="flushReports"/>
+        </methods>
+      </class> <!-- testCase_UsedCarsFunctionality.usedCarsChennaiVisibilityTest -->
+      <class name="testCase_UsedCarsFunctionality.usedCarsTabVisibleTest">
+        <methods>
+          <include name="usedCarsVisibleTest"/>
+          <include name="invokeBrowser"/>
+          <include name="flushReports"/>
+        </methods>
+      </class> <!-- testCase_UsedCarsFunctionality.usedCarsTabVisibleTest -->
+      <class name="testCase_UpcomingBikesDetails.alertMeLaunchTest">
+        <methods>
+          <include name="alertMeTest"/>
+          <include name="invokeBrowser"/>
+          <include name="flushReports"/>
+        </methods>
+      </class> <!-- testCase_UpcomingBikesDetails.alertMeLaunchTest -->
+      <class name="testCase_loginSignupFunctionality.loginSignupDisplayedTest">
+        <methods>
+          <include name="logSignVisibilityTest"/>
+          <include name="invokeBrowser"/>
+          <include name="flushReports"/>
+        </methods>
+      </class> <!-- testCase_loginSignupFunctionality.loginSignupDisplayedTest -->
+      <class name="testCase_loginSignupFunctionality.LoginWithFacebookInvalidEmailTest">
+        <methods>
+          <include name="FacebookInvalidEmailLoginTest" invocation-numbers="0"/>
+          <include name="invokeBrowser"/>
+          <include name="flushReports"/>
+        </methods>
+      </class> <!-- testCase_loginSignupFunctionality.LoginWithFacebookInvalidEmailTest -->
+      <class name="testCase_UsedCarsFunctionality.viewSellerDetailsTest">
+        <methods>
+          <include name="usedCarsViewSellerTest"/>
+          <include name="invokeBrowser"/>
+          <include name="flushReports"/>
+        </methods>
+      </class> <!-- testCase_UsedCarsFunctionality.viewSellerDetailsTest -->
+      <class name="testCase_ManufacturerFunctionality.manufacturerDropdownVisibleTest">
+        <methods>
+          <include name="manufacturerVisbleTest"/>
+          <include name="invokeBrowser"/>
+          <include name="flushReports"/>
+        </methods>
+      </class> <!-- testCase_ManufacturerFunctionality.manufacturerDropdownVisibleTest -->
+      <class name="testCase_loginSignupFunctionality.LoginWithGoogleInvalidPasswordTest">
+        <methods>
+          <include name="GoogleInvalidPasswordTest" invocation-numbers="0"/>
+          <include name="invokeBrowser"/>
+          <include name="flushReports"/>
+        </methods>
+      </class> <!-- testCase_loginSignupFunctionality.LoginWithGoogleInvalidPasswordTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
