@@ -17,6 +17,7 @@ public class UpcomingBikesPage extends PageBaseClass {
 
 	public TopMenuClass topMenu;
 	
+	
 	public UpcomingBikesPage(WebDriver driver , ExtentTest logger){
 		super(driver, logger);
 		topMenu = new TopMenuClass(driver, logger);
@@ -24,7 +25,7 @@ public class UpcomingBikesPage extends PageBaseClass {
 
 	}
 	
-	
+	//selecting honda
 	public void selectHonda() 
 	{
 		try {
@@ -37,7 +38,7 @@ public class UpcomingBikesPage extends PageBaseClass {
 		}
 	}
 	
-	
+	//click View More
 	public void clickViewMore() {
 		try {
 			JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -54,14 +55,15 @@ public class UpcomingBikesPage extends PageBaseClass {
 		}
 
 	}
-	
+	//fetching bikes under 4 lakhs
 	public ArrayList<String[]> underFourLakhBikes() {
 		
 		ArrayList<String []> bikesDetails = new ArrayList<String []>();
 		
 		try {
 			reportInfo("Fetching bikes details under 4 lakh price");
-			
+			waitLoad(2);
+			takeScreenShotOn();
 			List<WebElement> prices = getElements("prices_Xpath");
 			List<WebElement> names = getElements("names_Xpath");
 			List<WebElement> launchDates = getElements("launchDates_Xpath");
@@ -85,7 +87,7 @@ public class UpcomingBikesPage extends PageBaseClass {
 		
 		return bikesDetails;
 	}
-	
+	//click Manufacturer
 	public void clickManufacturer()
 	{
 		try {
@@ -97,7 +99,7 @@ public class UpcomingBikesPage extends PageBaseClass {
 			reportFail(e.getMessage());
 		}
 	}
-	
+	//manufacturer dropdown visible
 	public void verifyVisibilityManufacturer() {
 		try {
 			reportInfo("Verifying manufacture is present");
@@ -113,7 +115,7 @@ public class UpcomingBikesPage extends PageBaseClass {
 
 	}
 	
-
+	//honda visible
 	public void verifyVisibilityHonda() {
 		try {
 			reportInfo("verifying Honda is peresent in manufacture");
@@ -128,7 +130,7 @@ public class UpcomingBikesPage extends PageBaseClass {
 		}
 
 	}
-	
+	//honda bikes displayed
 	public void verifyHondaBikesDisplayed() {
 		try {
 			reportInfo("Verifying Honda bikes are displayed");
@@ -145,7 +147,7 @@ public class UpcomingBikesPage extends PageBaseClass {
 
 	}
 	
-	
+	//name visible
 	public void verifyVisibleName()
 	{
 		try {
@@ -162,7 +164,7 @@ public class UpcomingBikesPage extends PageBaseClass {
 			reportFail(e.getMessage());
 		}
 	}
-	
+	//price visible
 	public void verifyVisiblePrice()
 	{
 		try
@@ -179,7 +181,7 @@ public class UpcomingBikesPage extends PageBaseClass {
 			reportFail(e.getMessage());
 		}
 	}
-	
+	//launch date visible
 	public void verifyVisibleLaunchDate()
 	{
 		try
@@ -197,8 +199,8 @@ public class UpcomingBikesPage extends PageBaseClass {
 		}
 	}
  
-
-	public void clickAlterMeWhenLaunched()
+	//click Alert Me When Launched method
+	public void clickAlertMeWhenLaunched()
 	{
 		try {
 			reportInfo("Clicking AlertMe button ");

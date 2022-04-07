@@ -12,7 +12,7 @@ public class LoginWithGooglePage extends PageBaseClass {
 		super(driver, logger);
 	}
 	
-
+	//entering Email
 	public void enterEmail(String email) {
 		try {
 			reportInfo("Entering google email id ");
@@ -24,7 +24,7 @@ public class LoginWithGooglePage extends PageBaseClass {
 		}
 		
 	}
-	
+	//click on Email Next Button
 	public void clickEmailNextButton() {
 		try {
 			reportInfo("Clicking next button");
@@ -35,7 +35,7 @@ public class LoginWithGooglePage extends PageBaseClass {
 			reportFail(e.getMessage());
 		}
 	}
-	
+	// entering Password
 	public void enterPassword(String password) {
 		try {
 			reportInfo("Entering google password");
@@ -47,7 +47,7 @@ public class LoginWithGooglePage extends PageBaseClass {
 			reportFail(e.getMessage());
 		}
 	}
-	
+	//click on Password Next Button
 	public void clickPasswordNextButton() {
 		try {
 			reportInfo("Clicking next button");
@@ -60,12 +60,13 @@ public class LoginWithGooglePage extends PageBaseClass {
 		}
 		
 	}
-	
+	//capturing incorrect Password Msg
 	public void incorrectPasswordMsg() {
 		try {
 			reportInfo("Capturing invalid password message");
 			explicitlyWait("GoogleIncorrectPasswordMsg_Xpath");
 			String errorMsg = elementGetText("GoogleIncorrectPasswordMsg_Xpath");
+			takeScreenShotOn();
 			writeError(errorMsg,"googleInvalidPasswordErrorMsg");
 			reportPass("Captured invalid password message");
 			System.out.println(errorMsg);
@@ -74,12 +75,13 @@ public class LoginWithGooglePage extends PageBaseClass {
 			reportFail(e.getMessage());
 		}
 	}
-	
+	//capturing incorrect Email Msg
 	public void incorrectEmailMsg() {
 		try {
 			reportInfo("Capturing invalid email message");
 			explicitlyWait("GoogleIncorrectEmailMsg_Xpath");
 			String errorMsg = elementGetText("GoogleIncorrectEmailMsg_Xpath");
+			takeScreenShotOn();
 			writeError(errorMsg,"googleInvalidEmailErrorMsg");
 			reportPass("Captured invalid email message");
 			System.out.println(errorMsg);

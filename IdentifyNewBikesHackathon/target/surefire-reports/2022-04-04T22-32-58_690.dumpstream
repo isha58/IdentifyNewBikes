@@ -1,0 +1,4 @@
+# Created at 2022-04-04T22:33:03.472
+Boot Manifest-JAR contains absolute paths in classpath 'Z:\cognizant\javaprograms-eclipse\IdentifyNewBikesHackathon\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

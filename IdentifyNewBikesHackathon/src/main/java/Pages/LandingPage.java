@@ -17,7 +17,7 @@ public class LandingPage extends PageBaseClass {
 		topMenu = new TopMenuClass(driver, logger);
 		PageFactory.initElements(driver, topMenu);
 	}
-	
+	//verify loginSignup visibility
 	public void verifyVisibilityLoginSignUp()
 	{
 		try
@@ -34,6 +34,7 @@ public class LandingPage extends PageBaseClass {
 			reportFail(e.getMessage());
 		}
 	}
+	//verify continue with google is clickable
 	public void verifyContinueGoogleIsClickable()
 	{
 		
@@ -50,7 +51,7 @@ public class LandingPage extends PageBaseClass {
 			reportFail(e.getMessage());
 		}
 	}
-	
+	//verify loginSignup is clickable
 	public void verifyLoginSignupIsClickable()
 	{
 		try
@@ -68,17 +69,7 @@ public class LandingPage extends PageBaseClass {
 		}
 	}
 	
-
-
-//	public LoginWithGooglePage clickLoginSignupButton() {
-//		logger.log(Status.INFO,"Clicking the Login Button, Present is header");
-//		elementClick("loginSignup_Id");
-//		logger.log(Status.INFO,"Clicked the Login Button");
-//		
-//		LoginWithGooglePage loginWithGooglePage = new LoginWithGooglePage(driver, logger);
-//		PageFactory.initElements(driver, loginWithGooglePage);
-//		return loginWithGooglePage;
-//	}
+	//clicking on loginSIgnup button
 	public void clickLoginSignupButton() {
 		try {
 			reportInfo("Clicking the Login/Signup button");
@@ -91,12 +82,13 @@ public class LandingPage extends PageBaseClass {
 		
 	}
 	
-
+	//navigate to TopMenuClass
 	public TopMenuClass getTopMenu() {
 		
 		return topMenu;
 	}
 	
+	//click login close method
 	public void clickLoginClose() {
 		try {
 			reportInfo("Closing Login popup");
@@ -108,7 +100,7 @@ public class LandingPage extends PageBaseClass {
 			reportFail(e.getMessage());
 		}
 	}
-	
+	//clicking on continue with facebook
 	public LoginWithFacebookPage clickContinueWithFacebook() {
 		try {
 			waitLoad(2);
@@ -129,7 +121,7 @@ public class LandingPage extends PageBaseClass {
 		PageFactory.initElements(driver, loginWithFacebookPage);
 		return loginWithFacebookPage;
 	}
-	
+	//clicking on continue with google
 	public LoginWithGooglePage clickContinueWithGoogle() {
 		try {
 			waitLoad(2);

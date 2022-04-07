@@ -23,7 +23,6 @@
       <class name="testCase_NewBikesFunctionality.newBikesTabVisibleTest"/>
       <class name="testCase_UpcomingBikesDetails.launchDateUpcomingBikesTest"/>
       <class name="testCase_NewBikesFunctionality.upcomingBikesVisibilityTest"/>
-      <class name="testingbuild.test1"/>
       <class name="testCase_loginSignupFunctionality.loginSignupGoogleClickTest"/>
     </classes>
   </test> <!-- Test -->

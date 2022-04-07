@@ -6,8 +6,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.remote.CapabilityType;
@@ -19,7 +19,7 @@ public class DriverSetup {
 	static WebDriver driver;
 	public static Properties prop;
 
-	
+	//setting up the driver
 	public static WebDriver getWebDriver() {
 		
 		try 
@@ -36,11 +36,15 @@ public class DriverSetup {
 			    DesiredCapabilities cap=new DesiredCapabilities();
 			    cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 				driver = new ChromeDriver(op);
+				System.out.println("Chrome browser opened");
 			//Firefox Browser
 			} else if (browserName.equalsIgnoreCase("Mozila")) {
 				System.setProperty("webdriver.gecko.driver",
 						System.getProperty("user.dir") + "\\Drivers\\geckodriver.exe");
-				driver = new FirefoxDriver();
+				FirefoxOptions opt = new FirefoxOptions();
+				opt.addArguments("--disable-notifications");
+				driver = new FirefoxDriver(opt);
+				System.out.println("Firefox browser opened");
 			} 
 			//Opera Browser
 			else if(browserName.equalsIgnoreCase("opera"))											
@@ -50,13 +54,7 @@ public class DriverSetup {
 				OperaOptions op = new OperaOptions();
 			    op.addArguments("--disable-notifications");
 			    driver=new OperaDriver(op);
-				//System.out.println("Opera browser opened");
-			}
-			//Edge Browser------not working ----------opening the browser but not the webpage
-			else if(browserName.equalsIgnoreCase("edge"))
-			{
-				System.setProperty("webdriver.edge.driver","Drivers\\msedgedriver.exe");
-				driver = new EdgeDriver();
+				System.out.println("Opera browser opened");
 			}
 			else {
 				System.out.println("Invalid Input");
@@ -75,10 +73,9 @@ public class DriverSetup {
 		{
 			e.printStackTrace();
 		}
-//		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(45));
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
-		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+
+		driver.manage().timeouts().pageLoadTimeout(45,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(45,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();	
 		return driver;

@@ -17,17 +17,25 @@ public class UsedCarsPage extends PageBaseClass{
 	
 
 	public TopMenuClass topMenu;
-	public UsedCarsPage(WebDriver driver, ExtentTest logger) {
+	
+	
+	public UsedCarsPage(WebDriver driver, ExtentTest logger) 
+	{
 		super(driver, logger);
 		topMenu = new TopMenuClass(driver, logger);
 		PageFactory.initElements(driver, topMenu);
 	}
 	
+	//getting popular models name
 	public ArrayList<String> getPopularModels() {
 		ArrayList<String> models = new ArrayList<String>();
 		
 		try {
 			reportInfo("Fetching used cars popular models");
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("window.scrollBy(0,600)");
+			waitLoad(2);
+			takeScreenShotOn();
 			List<WebElement> popularModels = getElements("popularModels_Xpath");
 			
 			for(WebElement model : popularModels) {
@@ -42,7 +50,7 @@ public class UsedCarsPage extends PageBaseClass{
 		return models;
 	}
 	
-
+	//click On View Seller Detail button
 	public void clickOnViewSellerDetail()
 	{
 		try {

@@ -4,7 +4,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 
-
+//writing the report
 public class ExtentReportManager {
 	//public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports report;

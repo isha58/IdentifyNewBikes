@@ -28,7 +28,7 @@ public class alertMeLaunchTest extends BaseTestClass {
 		topMenu = landingPage.getTopMenu();
 		upcomingBikesPage = topMenu.clickNewBikes();
 		upcomingBikesPage.selectHonda();
-		upcomingBikesPage.clickAlterMeWhenLaunched();//not working
+		upcomingBikesPage.clickAlertMeWhenLaunched();//not working
 		
 	}
 }

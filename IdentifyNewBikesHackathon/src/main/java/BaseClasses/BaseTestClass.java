@@ -25,6 +25,7 @@ public class BaseTestClass {
 	public ExtentReports report = ExtentReportManager.getReportInstance();
 	public ExtentTest logger;
 	
+	//invoking browser
 	@BeforeMethod
 	public void invokeBrowser(){
 		try {
@@ -34,7 +35,7 @@ public class BaseTestClass {
 			logger.log(Status.FAIL, e.getMessage());
 		}
 	}
-	
+	//open application
 	public LandingPage openApplication() {
 		
 		try {
@@ -55,6 +56,7 @@ public class BaseTestClass {
 
 	}
 	
+	//flushing report
 	@AfterMethod
 	public void flushReports() {
 		report.flush();

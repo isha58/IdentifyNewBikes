@@ -13,7 +13,7 @@ public class LoginWithFacebookPage extends PageBaseClass{
 		super(driver, logger);
 	}
 	
-	
+	//entering  email
 	public void enterEmail(String email) {
 		try {
 			reportInfo("Entering email id");
@@ -24,7 +24,7 @@ public class LoginWithFacebookPage extends PageBaseClass{
 			reportFail(e.getMessage());
 		}
 	}
-	
+	//entering password
 	public void enterPassword(String password) {
 		try {
 			reportInfo("Entering password");
@@ -35,7 +35,7 @@ public class LoginWithFacebookPage extends PageBaseClass{
 			reportFail(e.getMessage());
 		}
 	}
-	
+	//click on login button
 	public void clickLoginButton() {
 		try {
 			reportInfo("Clicking Login button");
@@ -46,11 +46,12 @@ public class LoginWithFacebookPage extends PageBaseClass{
 			reportFail(e.getMessage());
 		}
 	}
-	
+	//capturing incorrect Email Msg
 	public void incorrectEmailMsg() {
 		try {
 			reportInfo("Capturing invalid email error message");
 			String errorMsg = elementGetText("FacebookIncorrectEmailMsg_Xpath");
+			takeScreenShotOn();
 			writeError(errorMsg,"facebookInvalidEmailErrorMsg");
 			reportPass("Captured invalid email error message");
 			System.out.println(errorMsg);
@@ -59,11 +60,12 @@ public class LoginWithFacebookPage extends PageBaseClass{
 			reportFail(e.getMessage());
 		}
 	}
-	
+	//capturing incorrect Password Msg
 	public void incorrectPasswordMsg() {
 		try {
 			reportInfo("Capturing invalid password error message");
 			String errorMsg = elementGetText("FacebookIncorrectPasswordMsg_Xpath");
+			takeScreenShotOn();
 			writeError(errorMsg,"facebookInvalidPasswordErrorMsg");
 			reportPass("Captured invalid password error message");
 			System.out.println(errorMsg);
